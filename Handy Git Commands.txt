@@ -1,0 +1,56 @@
+===================
+USEFUL GIT COMMANDS
+===================
+
+git help <command>
+eg. git help log
+
+
+git pull
+
+- does a fetch AND merge
+
+
+git pull --r[ebase]
+
+- does a fetch and rebase
+
+Use rebase to move branch to tip. Using Merge will create new merge commits, so rebase normally tidier (where applicable)
+
+
+git fetch --prune
+
+- does a fetch and deletes/prunes any local committed branches that are no longer on the remote
+
+
+git remote -v
+
+- view the current remote
+
+
+git remote set-url <https://github.com/.....>
+
+- change the remote URL
+
+
+git checkout -b <new_branch_name>
+
+- create a new branch, and start using it straight away
+
+
+git rebase -i <master> <new_feature_branch>
+
+- does a rebase, but lets you scrunch and fixup the commits to tidy them up
+
+git rebase -i HEAD~3
+
+- just do a tify up of the last 3 commits, with no rebase onto another branch
+
+git rebase <branch>
+
+- rebase the current branch on to the specified branch
+
+git rebase --onto master upstream_parent_branch new_feature_branch
+
+git rebase --onto <SHA> upstream_parent_branch new_feature_branch
+
