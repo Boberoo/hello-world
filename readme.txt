@@ -11,6 +11,9 @@ Skip this line?
 
 This is another ammendment.
 
+New feature going here
+----------------------
+
 And yet another.
 And another.
 And some more.
