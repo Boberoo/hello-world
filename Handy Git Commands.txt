@@ -46,6 +46,7 @@ git rebase -i HEAD~3
 
 - just do a tidy up of the last 3 commits, with no rebase onto another branch
 
+
 git rebase <branch>
 
 - rebase the current branch on to the specified branch
